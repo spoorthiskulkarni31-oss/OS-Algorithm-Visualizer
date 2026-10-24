@@ -1,4 +1,4 @@
-# Stillscreen Storycraft
+# OS-Algorithm-Visualizer
 
 Implement exactly the screenshot and nothing else
 
