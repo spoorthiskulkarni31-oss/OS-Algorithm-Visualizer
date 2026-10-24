@@ -130,7 +130,7 @@ export function cLook(
       to,
       distance,
       cumulative,
-      isWrap: direction === "right" ? i === above.length : i === above.length,
+      isWrap: i === above.length,
     });
     current = to;
   });
