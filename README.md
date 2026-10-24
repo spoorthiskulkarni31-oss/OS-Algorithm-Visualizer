@@ -1,26 +1,107 @@
-# OS-Algorithm-Visualizer
+# OS Algorithm Visualizer
 
-Implement exactly the screenshot and nothing else
+An interactive web application that helps students understand Operating System concepts through visual simulations of memory allocation and disk scheduling algorithms.
 
-This project was built with [Lovable](https://lovable.dev).
+## 🌐 Live Demo
 
-**Live app**: https://stillscreen-storycraft.lovable.app
+**[Click here to use OS Algorithm Visualizer](https://neon-algos-viz.lovable.app/)**
 
-## Build with Lovable
+## 📂 GitHub Repository
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a021dda3-32d9-4033-87f1-f40835767e9a).
+**[View Source Code on GitHub](https://github.com/spoorthiskulkarni31-oss/OS-Algorithm-Visualizer)**
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## ✨ Features
 
-## Development
+### 1. First-Fit Memory Allocation
+- Simulates the First-Fit memory allocation algorithm.
+- Allows users to enter process sizes and memory block sizes.
+- Displays allocation results for each process.
+- Shows allocated and unallocated processes.
+- Provides memory allocation statistics and remaining space.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### 2. C-LOOK Disk Scheduling
+- Simulates the C-LOOK disk scheduling algorithm.
+- Accepts disk requests and an initial head position.
+- Supports left and right scan directions.
+- Displays the disk request servicing sequence.
+- Calculates total disk head movement.
+- Provides a visual representation of disk scheduling.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+### 3. Interactive Quiz
+- Includes multiple-choice questions about First-Fit and C-LOOK.
+- Provides feedback on answers.
+- Tracks scores and quiz progress.
+- Helps students test their understanding of Operating System algorithms.
+
+### 4. Modern User Interface
+- Cyberpunk-inspired dark theme with neon accents.
+- Interactive controls and visualizations.
+- Responsive layout for different screen sizes.
+- Simple navigation between the Home, First-Fit, C-LOOK, and Quiz sections.
+
+## 🛠️ Tech Stack
+
+- **React** — Building the user interface.
+- **TypeScript** — Type-safe application logic.
+- **Tailwind CSS** — Styling and responsive design.
+- **TanStack Start** — Application framework and routing.
+- **Vite** — Development and build tooling.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Install [Node.js](https://nodejs.org/) and npm.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/spoorthiskulkarni31-oss/OS-Algorithm-Visualizer.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd OS-Algorithm-Visualizer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
+
+Open the local URL displayed in your terminal to access the application.
+
+## 🎯 Project Objective
+
+The objective of this project is to make Operating System concepts easier to learn through interactive simulations, visual explanations, and quizzes. It provides students with a practical way to explore memory allocation and disk scheduling algorithms.
+
+## 📚 Concepts Covered
+
+- Operating Systems
+- Memory Management
+- First-Fit Memory Allocation
+- Disk Scheduling
+- C-LOOK Algorithm
+- Algorithm Simulation
+
+## 👩‍💻 Author
+
+**Spoorthi S. Kulkarni**
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository and try the live demo.
