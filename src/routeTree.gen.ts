@@ -10,33 +10,63 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CLookRouteImport } from './routes/c-look'
+import { Route as FirstFitRouteImport } from './routes/first-fit'
+import { Route as QuizRouteImport } from './routes/quiz'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CLookRoute = CLookRouteImport.update({
+  id: '/c-look',
+  path: '/c-look',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FirstFitRoute = FirstFitRouteImport.update({
+  id: '/first-fit',
+  path: '/first-fit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuizRoute = QuizRouteImport.update({
+  id: '/quiz',
+  path: '/quiz',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/c-look': typeof CLookRoute
+  '/first-fit': typeof FirstFitRoute
+  '/quiz': typeof QuizRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/c-look': typeof CLookRoute
+  '/first-fit': typeof FirstFitRoute
+  '/quiz': typeof QuizRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/c-look': typeof CLookRoute
+  '/first-fit': typeof FirstFitRoute
+  '/quiz': typeof QuizRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/c-look' | '/first-fit' | '/quiz'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/c-look' | '/first-fit' | '/quiz'
+  id: '__root__' | '/' | '/c-look' | '/first-fit' | '/quiz'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CLookRoute: typeof CLookRoute
+  FirstFitRoute: typeof FirstFitRoute
+  QuizRoute: typeof QuizRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +78,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/c-look': {
+      id: '/c-look'
+      path: '/c-look'
+      fullPath: '/c-look'
+      preLoaderRoute: typeof CLookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/first-fit': {
+      id: '/first-fit'
+      path: '/first-fit'
+      fullPath: '/first-fit'
+      preLoaderRoute: typeof FirstFitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quiz': {
+      id: '/quiz'
+      path: '/quiz'
+      fullPath: '/quiz'
+      preLoaderRoute: typeof QuizRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CLookRoute: CLookRoute,
+  FirstFitRoute: FirstFitRoute,
+  QuizRoute: QuizRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
