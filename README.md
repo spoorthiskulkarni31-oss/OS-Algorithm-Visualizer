@@ -2,15 +2,15 @@
 
 An interactive web application that helps students understand Operating System concepts through visual simulations of memory allocation and disk scheduling algorithms.
 
-## 🌐 Live Demo
+##  Live Demo
 
 **[Click here to use OS Algorithm Visualizer](https://neon-algos-viz.lovable.app/)**
 
-## 📂 GitHub Repository
+## GitHub Repository
 
 **[View Source Code on GitHub](https://github.com/spoorthiskulkarni31-oss/OS-Algorithm-Visualizer)**
 
-## ✨ Features
+##  Features
 
 ### 1. First-Fit Memory Allocation
 - Simulates the First-Fit memory allocation algorithm.
@@ -39,7 +39,7 @@ An interactive web application that helps students understand Operating System c
 - Responsive layout for different screen sizes.
 - Simple navigation between the Home, First-Fit, C-LOOK, and Quiz sections.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React** — Building the user interface.
 - **TypeScript** — Type-safe application logic.
@@ -47,7 +47,7 @@ An interactive web application that helps students understand Operating System c
 - **TanStack Start** — Application framework and routing.
 - **Vite** — Development and build tooling.
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -81,11 +81,11 @@ npm run dev
 
 Open the local URL displayed in your terminal to access the application.
 
-## 🎯 Project Objective
+##  Project Objective
 
 The objective of this project is to make Operating System concepts easier to learn through interactive simulations, visual explanations, and quizzes. It provides students with a practical way to explore memory allocation and disk scheduling algorithms.
 
-## 📚 Concepts Covered
+##  Concepts Covered
 
 - Operating Systems
 - Memory Management
@@ -94,10 +94,9 @@ The objective of this project is to make Operating System concepts easier to lea
 - C-LOOK Algorithm
 - Algorithm Simulation
 
-## 👩‍💻 Author
+##  Author
 
 **Spoorthi S. Kulkarni**
 
 
 
-⭐ If you find this project useful, feel free to explore the repository and try the live demo.
