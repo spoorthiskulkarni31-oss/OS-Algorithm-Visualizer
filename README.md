@@ -98,10 +98,6 @@ The objective of this project is to make Operating System concepts easier to lea
 
 **Spoorthi S. Kulkarni**
 
-## 📄 License
 
-This project is intended for educational and learning purposes.
-
----
 
 ⭐ If you find this project useful, feel free to explore the repository and try the live demo.
